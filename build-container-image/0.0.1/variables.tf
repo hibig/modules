@@ -62,9 +62,15 @@ variable "registry_auth" {
   type    = bool
   default = false
 }
+# @label "test_auth"
+# @group "Build"
+variable "test_auth" {
+  type    = bool
+  default = false
+}
 # @label "Username"
 # @group "Build"
-# @show_if "registry_auth=true"
+# @show_if "registry_auth=true||test_auth=true"
 variable "registry_username" {
   type        = string
   default     = null
