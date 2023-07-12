@@ -52,6 +52,7 @@ variable "dockerfile" {
 }
 # @label "Image Name"
 # @group "Build"
+# @show_if "git_auth=true"
 variable "image" {
   type        = string
   description = "Name of the image to be built and deployed."
