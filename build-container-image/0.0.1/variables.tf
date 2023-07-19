@@ -7,7 +7,7 @@ variable "git_url" {
 # @label "dynamic"
 # @group "Source"
 variable "dynamic_text" {
-  type        = dynamic
+  
   description = "URL to the source code repository."
 }
 # @label "Git Branch"
