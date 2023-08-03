@@ -4,6 +4,13 @@ variable "image" {
   type        = string
   description = "Docker image name"
 }
+# @label "password"
+# @group "Basic"
+variable "password" {
+  type        = string
+   sensitive   = true
+  description = "password"
+}
 # @label "Ports"
 # @group "Basic"
 variable "ports" {
